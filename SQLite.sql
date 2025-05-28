@@ -1,3 +1,5 @@
 -- SQLite
-SELECT first_name, LENGTH (first_name)
-FROM people;
+SELECT first_name, COUNT (first_name)
+FROM people
+GROUP BY first_name
+ORDER BY COUNT (first_name) DESC;

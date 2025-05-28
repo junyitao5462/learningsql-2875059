@@ -6,6 +6,13 @@ ORDER BY last_name DESC
 lIMIT 50;
 
 
+-- GROUP AND COUNT 
+SELECT first_name, COUNT (first_name)
+FROM people
+GROUP BY first_name
+ORDER BY COUNT (first_name) DESC;
+
+
 
 
  
